@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEASTABLES</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="video-background">
+        <source src="mrbest.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <section id="inicio">
+    </section>
+    <section id="productos">
+        <div class="product">
+            <img src="feastable1.png" alt="Chocolate 1">
+            <p>MrBeast's Feastables Duopacks</p>
+            <p><del>18€</del> - 8'98€</p>
+            <a href="https://www.amazon.es/MrBeasts-Feastables-Duopacks-deliciosas-barritas/dp/B0CKL7GHLJ?th=1&linkCode=ll1&tag=bielcastillo-21&linkId=c256bd75f70f930b3a644f4fd0d47883&language=es_ES&ref_=as_li_ss_tl" target="_blank">COMPRAR MÁS BARATO</a>
+        </div>
+        <div class="product">
+            <img src="feastable2.png" alt="Chocolate 2">
+            <p>MrBeast's Feastables Duopacks</p>
+            <p><del>18€</del> - 11'95€</p>
+            <a href="https://www.amazon.es/MrBeasts-Feastables-Duopacks-deliciosas-barritas/dp/B0CKLCQZR8?&linkCode=ll1&tag=bielcastillo-21&linkId=ef9ce5366685c647f0f47978d03c02a2&language=es_ES&ref_=as_li_ss_tl" target="_blank">COMPRAR MÁS BARATO</a>
+        </div>
+    </section>
+    <audio id="background-music" autoplay loop volume="3000">
+        <source src="mrbeast.mp3" type="audio/mp3">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var music = document.getElementById('background-music');
+            music.play();
+        });
+    </script>
+</body>
+</html>
