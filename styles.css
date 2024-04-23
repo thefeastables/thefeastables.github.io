@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-weight: bold; /* Aplica negrita al texto */
+}
+
+.product {
+    position: relative; /* Asegura que los productos tengan una posición relativa */
+}
+
+/* Fondo para dispositivos móviles */
+
+/* Resto del CSS */
+.product p {
+    color: #000000; /* Cambia el color del texto a negro */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.product {
+    display: inline-block;
+    margin: 20px; /* Añadimos margen a todos lados */
+    text-align: center;
+    transition: transform 0.3s ease; /* Añadimos transición para agrandamiento */
+    border-radius: 10px; /* Añadir borde redondeado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+}
+
+.product:hover {
+    transform: scale(1.1); /* Agrandamos un 10% al pasar el cursor */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Añadir sombra más pronunciada al pasar el cursor */
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.product p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.product a {
+    display: inline-block;
+    background-color: #4d4dff;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product a:hover {
+    background-color: #3385ff;
+}
+
+/* Aplicar color rosa al botón de comprar */
+.product a.buy-btn {
+    background-color: #ff80cc;
+}
+
+footer {
+    background-color: #ff80cc;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Añadir sombra al pie de página */
+}
