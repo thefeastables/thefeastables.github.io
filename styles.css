@@ -6,6 +6,31 @@ body {
     font-weight: bold; /* Aplica negrita al texto */
 }
 
+.product {
+    position: relative; /* Asegura que los productos tengan una posición relativa */
+}
+
+/* Fondo para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: transparent; /* Fondo transparente en dispositivos móviles */
+    }
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('tu_imagen_de_fondo.jpg'); /* Reemplaza 'tu_imagen_de_fondo.jpg' con la ruta de tu imagen */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1; /* Coloca la imagen detrás de todo el contenido */
+    }
+}
+
+/* Resto del CSS */
 .product p {
     color: #000000; /* Cambia el color del texto a negro */
     font-size: 18px;
@@ -69,24 +94,3 @@ footer {
     padding: 20px 0;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1); /* Añadir sombra al pie de página */
 }
-
-/* Fondo para dispositivos móviles */
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: transparent; /* Fondo transparente en dispositivos móviles */
-    }
-    body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-image: url('tu_imagen_de_fondo.jpg'); /* Reemplaza 'tu_imagen_de_fondo.jpg' con la ruta de tu imagen */
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        z-index: -1; /* Coloca la imagen detrás de todo el contenido */
-    }
-}
-
